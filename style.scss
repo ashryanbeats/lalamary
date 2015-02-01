@@ -1,0 +1,245 @@
+/*
+	Theme Name: Lala Mary
+	Theme URI: http://lalamary.com
+	Description: A theme for Lala Mary.
+	Version: 0.0
+	Author: Ash Ryan (ashryanbeats)
+	Author URI: http://ashryanbeats.com
+	Tags: 
+*/
+
+
+/* colors */
+$dark-blue: #202630;
+$green: #21785C;
+$pink: #AB44A5;
+$blue: #74C0CF;
+$orange: #F7A75B;
+$gray: #E1E1E1;
+$white: #ffffff;
+$name-background: rgba(255, 255, 255, 0.6);
+
+/* general variable */
+$radius: 6px;
+
+/* fonts */
+h1, h2 {
+	font-family: 'Yellowtail', cursive, sans-serif; // adding sans-serif here catches the Japanese, which wouldn't be affected by the other values. English (Roma-ji) should be caught by the other values. Even if the English makes it all the way down to the end of the statment, sans-serif is preferable to serif here
+	& a {
+		color: $pink;
+	}
+	& a:hover {
+		color: $pink;
+	}
+	& a:focus {
+		color: $pink;
+	}
+}
+#name p {
+	& a {
+		color: $pink;
+	}
+	& a:hover {
+		color: $pink;
+	}
+	& a:focus {
+		color: $pink;
+	}	
+}
+p {
+	font-family: sans-serif;
+}
+.product h2 {
+	font-family: sans-serif;
+	font-weight: bold;	
+}
+a {
+	color: $blue;
+	text-decoration: none;
+	&:hover {
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
+
+/* jumbotron */
+.jumbotron {
+	background-image: url('http://lalamary.com/wp-content/uploads/2014/11/Lala-Mary-White-Christmas-Wreath-1-1140x300.jpg');
+}
+#jumbo {
+	padding: 144px 0px 0px 0px; /* attach h1 and p to the bottom */
+}
+#jumbo h1 {
+	margin-bottom: 0;
+	font-size: 100px;
+	@media (max-width: 400px) {
+		font-size: 65px;
+		text-align: right;
+		padding-right: 8px;
+		padding-bottom: 10px;
+	}
+}
+#name {
+	padding-left: 20px; 
+	background-color: $name-background;	/* color for h1 and p */
+	color: $pink;
+	@media (max-width: 400px) {
+		padding-left: 5px;
+	}
+
+}
+.jumbotron p {
+	margin-top: -15px;
+	/* padding-left: inherit; */
+	font-size: 20px;	
+	@media (max-width: 510px) {
+		font-size: 15px;
+	}
+	@media (max-width: 400px) {
+		font-size: 11px;
+		font-weight: bold;
+	}
+}
+#jumbotron-container {
+	margin-top: 20px;
+}
+
+
+/* nav */
+#nav-col {
+	padding: 1px 5px 5px 5px;
+	margin-bottom: 10px;
+}
+#nav-col h3 {
+	font-size: 20px;
+	margin-bottom: 3px;
+}
+.nav>li>a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nav-pills>li.active>a {
+	font-weight: bold;
+	background-color: $orange;
+	&:hover {
+		background-color: $blue;
+	}
+}
+.nav-pills>li>a {
+	background-color: $gray;
+	font-size: 14px;
+}
+
+
+/* buttons */
+.btn {
+	font-weight: bold;
+}
+.btn-info {
+	background-color: $blue;
+	border: none;
+	&:hover, &:active, &:focus {
+		background-color: $blue;
+	}
+}
+.btn-primary {
+	background-color: $pink;
+	border: none;
+	&:hover, &:active, &:focus {
+		background-color: $pink;
+	}
+}
+.product-showcase-more-links {
+	font-weight: bold;
+}
+
+
+/* footer */
+#footer {
+	background-color: $green; 
+	margin-top: 20px; 
+	padding-top: 20px;
+	clear: both;
+
+	background-image:
+		linear-gradient(
+			to bottom,
+			$white,
+			$green 35%
+	);
+
+}
+.well {
+	background-color: $gray;
+	padding: 18px;
+	height: 90px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.well p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: $blue;
+	margin-bottom: 0;
+}
+.footer-info p {
+	color: $white;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/* img */
+img, .entry img, .comment-content img, .widget img, .wp-caption { /*makes images responsive*/
+	display: block;
+	height: auto;
+	max-width: 100%;	
+	border-radius: $radius;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#product-content img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* single-product */
+.product-content img {
+	margin-bottom: 10px;
+}
+.product-details ul {
+	list-style: none;
+	text-indent: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+#product-order {
+}
+#product-content {
+	margin-top: 20px;
+}
+
+
+/* other */
+#main-content h2 {
+	text-align: center;
+	color: $pink;
+	margin-top: 0;
+}
+#main-content {
+	margin-bottom: 20px;
+}
+.product-showcase {
+	margin-bottom: 50px;
+	& h3 {
+		font-size: 30px;
+	}
+}
+.img-product-post {
+	margin-bottom: 10px;
+}
