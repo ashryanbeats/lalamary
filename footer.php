@@ -28,7 +28,7 @@
 				
 				<div class="row">
 					<div class="col-md-12 footer-info">
-						<p>© Lala Mary 2014</p>
+						<p>© Lala Mary 2014 - <?php echo date("Y") ?> | Site made with ア! by <a href="http://ashryanbeats.com">Ash Ryan Beats</a></p>
 					</div>
 				</div> <!-- end row -->
 			</div> <!-- end footer container -->
